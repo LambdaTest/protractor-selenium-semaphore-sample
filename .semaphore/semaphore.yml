@@ -14,8 +14,8 @@ blocks:
       - name: NODE_ENV
         commands:
           - ls -al
-          - echo 'export LT_USERNAME='robovipin'' >> .bashrc
-          - echo 'export LT_ACCESS_KEY='bX3VZpiN4Tp7cLD7MTfoXqqOZK3q7Xov7UcSCwGQkzf1MEB6bI'' >> .bashrc
+          - echo 'export LT_USERNAME='Your LambdaTest UserName'' >> .bashrc
+          - echo 'export LT_ACCESS_KEY='Your LambdaTest Access Key'' >> .bashrc
           
   - name: Set Tunnel
     task:
@@ -24,12 +24,12 @@ blocks:
         commands:
           - checkout
           - cd /home/semaphore/protractor-selenium-semaphore-sample
-          - wget https://s3.amazonaws.com/lambda-tunnel/LT_Linux.zip
+          - wget https://downloads.lambdatest.com/tunnel/windows/64bit/LT_Linux.zip
           #Extracting tunnel binary
           - sudo apt-get install unzip
           - unzip LT_Linux.zip
           #Executing tunnel library
-          - ./LT -user ${LAMBDATEST_EMAIL} -key ${LAMBDATEST_KEY} & sleep 30
+          - ./LT -user ${LT_USERNAME} -key ${LT_ACCESS_KEY} & sleep 30
 
   - name: Run Tests
     task:
