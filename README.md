@@ -1,6 +1,6 @@
 ![LambdaTest Logo](https://www.lambdatest.com/static/images/logo.svg)
 ---
-# protractor-selenium-sample
+# Protractor Selenium Sample
 
 ### Environment Setup
 
