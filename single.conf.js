@@ -13,9 +13,9 @@ exports.config = {
     'version':'67.0',
     'platform': 'WIN10',
     'video': true,
-    'network': true,
-    'console': true,
-    'visual': true
+    'network': false,
+    'console': false,
+    'visual': false
   },
   onPrepare: () => {
 
