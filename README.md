@@ -1,5 +1,7 @@
 # Run Protractor Selenium Tests with Semaphore CI on TestMu AI (Formerly LambdaTest)
 
+> Run End-to-End (E2E) testing with Protractor and Selenium, integrated with Semaphore CI on TestMu AI.
+
 <p align="center">
   <a href="https://www.testmuai.com/"><img src="https://img.shields.io/badge/MADE%20BY%20TestMu%20AI-000000.svg?style=for-the-badge&labelColor=000" alt="Made by TestMu AI"></a>
   <a href="https://www.npmjs.com/package/protractor"><img src="https://img.shields.io/npm/v/protractor.svg?style=for-the-badge&labelColor=000000" alt="Protractor version"></a>
